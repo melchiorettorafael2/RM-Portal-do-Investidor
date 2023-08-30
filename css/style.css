@@ -1,0 +1,526 @@
+/*Klaus Fundo de Investimentos*/
+/*Autor Rafael Melchioretto*/
+
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
+
+/*Body*/
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	height: 100vh;
+	box-sizing: border-box;
+}
+
+
+header{
+	position: fixed;
+	background:black; 
+	padding: 18px;
+	width:100%;
+	height: 70px;
+	z-index: 10000000;
+}
+
+
+
+.left_area h3{
+	color: #fff;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 500;
+	font-family: 'Oswald', sans-serif;
+}
+
+.left_area span{
+	color: #0FCC7D;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 900;
+	font-family: 'Oswald', sans-serif;
+}
+
+.logout_btn{
+	padding: 5px;
+	background-color: #0FCC7D;
+	border-style: none;
+	color: white;
+	text-decoration: none;
+	float: right;
+	margin-top: -38px;
+	margin-right: 5px;
+	border-radius:2px;
+	font-size: 13px;
+	font-weight: 600;
+	transition: 0.5s;
+	transition-property: background;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+
+.logout_btn:hover{
+	background-color: #0FAD69;
+	border-style: none;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.sidebar{
+    background: linear-gradient(0deg, rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../img/side6.png'); background-size:cover; background-attachment: scroll; 
+	margin-top: 70px; 
+	padding: 30px;
+	position: fixed;
+	left:0;
+	width: 248px;
+	height: 100%;
+	transition: 0.5s;
+	transition-property: left;
+}
+
+.sidebar .profile_image{
+	width:90px;
+	height:90px;
+	border-radius:100px;
+	margin-bottom: 15px;
+}
+
+.sidebar h4{
+	color: #ccc;
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 13px;
+	font-family: 'Ruda', sans-serif;
+	font-weight: 700;
+}
+
+.sidebar a{
+	color: #fff;
+	display: block;
+	width: 120%;
+	line-height: 300%;
+	text-decoration: none;
+	box-sizing: border-box;
+	transition: 0.2s;
+	transition-property: background;
+	margin-left:-20px;
+	padding-left:30px;
+}
+
+.sidebar a:hover{
+	background-color: #0FCC7D;
+	text-decoration: none;
+	color: white;
+	width:120%;
+	margin-left:-20px;
+	padding-left:30px;
+}
+
+#active{
+	background-color: #0FCC7D;
+	text-decoration: none;
+	color: white;
+	width:120%;
+	margin-left:-20px;
+	padding-left:30px;
+	transition: 0.5s;
+	transition-property: all;
+}
+
+.sidebar i{
+	padding-right:10px;
+}
+
+
+
+
+label #sidebar_btn{
+	z-index:1;
+	color: #fff;
+	position: fixed;
+	cursor: pointer;
+	left: 15px;
+	font-size: 29px;
+	margin-bottom: 5px 0;
+	transition: 0.5s;
+	transition-property: color;
+	margin-top: -7px;
+}
+
+
+label #sidebar_btn:hover{
+	color:#bcbcbc;
+}
+
+#check:checked~.sidebar{
+	left: -191px;
+	z-index: 100000;
+}
+
+#check:checked~.sidebar hr{
+	display: none;
+}
+
+#check:checked~.sidebar i{
+	margin-left: 15px;
+	text-align: center;
+}
+
+#check:checked~.sidebar a span{
+	display: none;
+}
+
+#check:checked~.sidebar a{
+	font-size: 20px;
+	margin-left: 160px;
+	width: 61px;
+	padding-left: 5px;
+	line-height: 220%;
+}
+
+#check:checked~.sidebar a:hover{
+	font-size: 20px;
+	margin-left: 160px;
+	width: 61px;
+	padding-left: 5px;
+}
+
+#check:checked~.sidebar h4{
+	font-size:5px;
+}
+
+.content{
+	background-color:#ECF0F5;
+	margin-left: 250px;
+	margin-top: 70px;
+	height: 100vh;
+	width: 100%;
+	transition: 0.5s; 
+}
+
+#check:checked ~ .content{
+	margin-left: 50px;
+}
+
+#check:checked ~.sidebar a{
+	margin-top: -50px;
+	margin-bottom: 55px;
+}
+
+
+#check{
+	display:none;
+}
+
+.image-upload input {
+  display: none;
+}
+
+
+
+.card-body1{
+	display: inline-block;
+	font-family: "Roboto", sans-serif;
+	padding: 20px;
+	margin: 10px;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: 20px;
+	width: 258px;
+	height: 130px;
+	color: #fff;
+	border-radius: 5px;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.float-left{
+	float: left;
+}
+
+.float-right{
+	float: right;
+}
+
+.card-body1 h4{
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.currency, .count{
+	font-size: 25px;
+	font-weight: 500;
+}
+
+.card-body1 p{
+	font-size: 14px;
+	margin-top: 0;
+	
+}
+
+.card-body1 i{
+	font-size: 35px;
+	color: rgba(255,255,255,0.6);
+}
+
+#check:checked~.content .card-body1{
+	width: 258px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+#check:checked~.content .card-body1 i{
+	font-size: 35px;
+
+}
+
+#check:checked~.content .card-body1 p{
+	font-size: 14px;
+
+}
+
+
+
+
+/*Grafico Rentabilidade*/
+
+
+
+.btn a:hover{
+	background-color: #0FAD69;
+}
+
+/*Home*/
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+.info{
+	height:90px;
+}
+
+.profile_image2{
+	width:120px;
+	height:120px;
+	border-radius:100px;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.linha-vertical {
+  height: 120px;/*Altura da linha*/
+  border-left: 1.9px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+  color: #bcbcbc;
+  margin-top: -40px;
+  margin-left: 40%;
+}
+
+.nome{
+	color:#0FCC7D;
+	margin-left: 58%;
+	padding-top: 30px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-size:20px;
+
+}
+
+.cpf{
+	margin-left: 58%;
+	font-size: 15px;
+	margin-top: 15px;
+	color:#909090;
+}
+
+.banco{
+	margin-left: 58%;
+	font-size: 15px;
+	margin-top: 10px;
+	color:#909090;
+}
+
+.conta{
+	margin-left: 58%;
+	font-size: 15px;
+	margin-top: 10px;
+	color:#909090;
+}
+
+.agencia{
+	margin-left: 58%;
+	font-size: 15px;
+	margin-top: 10px;
+	color:#909090;
+}
+
+.perfil{
+	margin-left: 58%;
+	font-size: 15px;
+	margin-top: -10px;
+	color:#b2b2b2;
+}
+
+.aporte h6{
+	color:#b2b2b2;
+	margin-top: 2px;
+	font-size:17px;
+}
+
+.montante h6{
+	color:#b2b2b2;
+	font-size:17px;
+}
+
+.resgate h6{
+	color:#b2b2b2;
+	font-size:17px;
+}
+
+.saldo{
+	color:#b2b2b2;
+	font-size:17px;
+}
+
+.rent{
+	color:#b2b2b2;
+	font-size:17px;
+}
+
+.titulo{
+	
+	font-size:16px;
+}
+
+.valor{
+	font-size:18px;
+	color:#0FCC7D;
+}
+
+
+
+#btn_1{
+	margin-left: 94%;
+	margin-top: -100px;
+}
+
+#btn_2{
+	margin-left: 108%;
+	margin-top: -148px;
+}
+
+.card .card-image{
+    overflow: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+
+.card{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.card .card-content {
+    padding: 10px;    
+}
+
+.card .card-content .card-title, .card-reveal .card-title{
+    font-size: 24px;
+    font-weight: 200;    
+}
+
+.card .card-action{
+    padding: 20px;
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+}
+.card .card-action a{
+    font-size: 15px;
+    color: #ffab40;
+    text-transform:uppercase;
+    margin-right: 20px;    
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.card .card-action a:hover{    
+    color:#ffd8a6;
+    text-decoration:none;
+}
+
+.card .card-reveal{    
+    padding: 20px;
+    position: absolute;
+    background-color: #FFF;
+    width: 100%;
+    overflow-y: auto;
+    /*top: 0;*/
+    left:0;
+    bottom:0;
+    height: 100%;
+    z-index: 1;
+    display: none;    
+}
+
+.card .card-reveal p{
+    color: rgba(0, 0, 0, 0.71);
+    margin:20px ;
+}
+
+.btn-custom{
+    background-color: transparent;
+    font-size:18px;
+}
+
+/*Media Querys*/
+
+// Dispositivos small (telefones em modo paisagem, com 576px ou mais)
+@media (max-width: 376px) {
+	#banner{
+		width: 106.5%;  
+		margin-left:-33px;
+	}
+}
+
+// Dispositivos médios (tablets com 768px ou mais)
+@media (max-width: 768px) {
+  
+}
+
+// Dispositivos large (desktops com 992px ou mais)
+@media (max-width: 992px) {  
+
+	#banner{
+		width: 106.5%;  
+		margin-left:-33px;
+	}
+}
+}
+
+// Dispositivos extra large (desktops grandes com 1200px ou mais)
+@media (max-width: 1200px) { 
+
+		#banner{
+			width: 106.5%;  
+			margin-left:-33px;
+		}
+	}
+
+}

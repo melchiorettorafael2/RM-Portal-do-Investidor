@@ -1,0 +1,70 @@
+
+.estilo_logo{
+
+	background: black;
+	height: 70px;
+}
+
+
+.logo{
+	width: 200px;
+	padding-left:15px;
+}
+
+
+.titulo h2{
+	margin-top: 30px;
+	font-style: italic;
+	color: #757574;
+	text-align: center;
+	padding-bottom: -10px;
+}
+
+
+.linha1{
+
+}
+
+.data_completa h4{
+	text-transform: uppercase;
+	font-style: italic;
+	text-align: center;
+	color: #757574;
+}
+
+.nome{
+	margin-left: 15px;
+}
+
+.cpf{
+	margin-top: -10px;
+	margin-left: 15px;
+}
+
+.montante{
+	margin-top: -100px;
+	margin-left: 500px;
+}
+
+.rentabilidade{
+	margin-top: -10px;
+	margin-left: 500px;
+}
+
+.janeiro{
+	margin-top: 5px;
+	background: black;
+	color: white;
+	text-align: center;
+ 	font-size: 15px;
+ 	height: 25px;
+ 	padding-top: 5px;
+}
+
+
+
+
+
+
+
+

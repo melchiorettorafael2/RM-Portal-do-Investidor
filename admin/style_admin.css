@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html,body{
+background-image: url('./img/11.jpeg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 380px;
+margin-top: 95px;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(255,255,255,0.5) !important;
+}
+
+.card-header h1{
+color: black;
+text-align: center;
+font-family: 'Bebas Neue', cursive;
+font-size: 70px;
+
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #000;
+color: white;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: black;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: white;
+background-color: #000;
+width: 100px;
+height: 35px;
+}
+
+.login_btn:hover{
+color: white;
+background-color: #222;
+height:35px;
+}
+
+.links{
+color: black;
+}
+
+.links a{
+margin-left: 4px;
+color: #2980B9;
+}
